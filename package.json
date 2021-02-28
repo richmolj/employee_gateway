@@ -1,0 +1,23 @@
+{
+  "name": "federation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start-gateway": "nodemon --delay 2 ./example/gateway.js"
+  },
+  "dependencies": {
+    "@apollo/gateway": "^0.16.2",
+    "apollo-server": "^2.14.2",
+    "graphql": "^14.6.0"
+  },
+  "devDependencies": {
+    "apollo-server-core": "^2.14.2",
+    "apollo-server-testing": "^2.14.1",
+    "@babel/core": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "concurrently": "4.1.0",
+    "graphql-tag": "^2.10.3",
+    "nodemon": "^2.0.4"
+  }
+}

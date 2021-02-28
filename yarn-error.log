@@ -1,0 +1,52 @@
+Arguments: 
+  /Users/lrichmond1/.nvm/versions/node/v10.16.2/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/lrichmond1/.rbenv/shims:/Users/lrichmond1/.nvm/versions/node/v10.16.2/bin:/usr/local/opt/openssl/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/lrichmond1/.okta/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://artifactory.inf.bloomberg.com/artifactory/api/npm/npm-repos/@apollo%2fgateway: tunneling socket could not be established, statusCode=500
+      at ClientRequest.onConnect (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:151939:19)
+      at Object.onceWrapper (events.js:286:20)
+      at ClientRequest.emit (events.js:198:13)
+      at Socket.socketOnData (_http_client.js:475:11)
+      at Socket.emit (events.js:198:13)
+      at addChunk (_stream_readable.js:288:12)
+      at readableAddChunk (_stream_readable.js:269:11)
+      at Socket.Readable.push (_stream_readable.js:224:10)
+      at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+
+npm manifest: 
+  {
+    "name": "federation",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+      "@apollo/gateway": "^0.16.2",
+      "apollo-server": "^2.14.2",
+      "graphql": "^14.6.0"
+    },
+    "devDependencies": {
+      "apollo-server-core": "^2.14.2",
+      "apollo-server-testing": "^2.14.1",
+      "concurrently": "4.1.0",
+      "graphql-tag": "^2.10.3",
+      "nodemon": "^2.0.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
